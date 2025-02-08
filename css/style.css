@@ -132,28 +132,33 @@ nav a:hover,
     box-shadow: 0 0 10px #4acfee;
 }
 
-.hero-img{
+.hero-img {
     width: 400px;
     height: 400px;
-    background-color: none;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 10px #4acfee;
     display: flex;
     justify-content: center;
-    transition: 0.5;
+    transition: 0.5s ease-in-out; 
 }
 
-.hero-img:hover{
+.hero-img:hover {
     box-shadow: 0 0 25px #4acfee;
 }
 
-.hero-img img{
+.hero-img img {
     width: 100%;
     position: absolute;
     mix-blend-mode: lighten;
+    transition: transform 0.5s ease-in-out; 
 }
+
+.hero-img:hover img {
+    transform: scale(1.1); 
+}
+
 
 .info-sec{
     display: flex;
