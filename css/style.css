@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Segoe UI Historic, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 ul{
     list-style: none;
@@ -17,5 +17,189 @@ a{
     background-color: #4ad0ee1b;
     backdrop-filter: blur(3px);
     border-radius: 50px;
-    box-shadow: 5px 5px 20px 1px #4ace;
+    box-shadow: 5px 5px 20px 1px #4acfee;
 }
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+nav h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 0px 25px;
+}
+
+nav a:hover, 
+.active{
+    color: #4acfee;
+    text-decoration: underline;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 0 10%;
+    color: white;
+    justify-content: space-between;
+}
+.hero h2{
+    font-size: 60px;
+}
+.hero h3{
+    margin-top: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #4acfee, #53f8c9,#6070fd, #5bbdff, #4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s infinite linear;
+}
+
+.hero p{
+    max-width: 450px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+.buttons{
+    display: flex;
+}
+.btn1{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4acfee;
+    border: 2px solid #4acfee;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #4acfee;
+    font-size: 16px;
+    font-weight: 900;
+    color: #0e1217;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.3s;
+    text-wrap: nowrap;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #4acfee;
+}
+
+.ul-icons {
+    display: flex;
+    align-items: center;
+}
+
+.ul-icons li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.ul-icons a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #4acfee;
+    border-radius: 50%;
+    color: #4acfee;
+    transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0.7px;
+}
+.ul-icons a:hover{
+    background-color: #4acfee;
+    color: #0e1217;
+    box-shadow: 0 0 10px #4acfee;
+}
+
+.hero-img{
+    width: 400px;
+    height: 400px;
+    background-color: none;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px #4acfee;
+    display: flex;
+    justify-content: center;
+    transition: 0.5;
+}
+
+.hero-img:hover{
+    box-shadow: 0 0 25px #4acfee;
+}
+
+.hero-img img{
+    width: 85%;
+    position: absolute;
+    mix-blend-mode: lighten;
+}
+
+.info-sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+.info-card{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.info-card h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #4acfee, #53f8c9,#6070fd, #5bbdff, #4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s infinite linear;
+    margin-right: 10px;
+
+}
+.info-card p{
+    color: white;
+    font-size: 20px;
+}
+
+/* @media(min-width: 1240px){
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .info-sec{
+        margin-top: 30px;
+    }
+} */
