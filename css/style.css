@@ -2,24 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul{
     list-style: none;
-}
-a{
-    text-decoration: none !important; 
-
 }
 .main-part{
     width: 90%;
     height: 90%;
     background-color: #4ad0ee1b;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1.7px);
     border-radius: 50px;
     box-shadow: 5px 5px 20px 1px #4acfee;
 }
-.nav{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +38,7 @@ nav a{
     font-size: 20px;
     font-weight: bold;
     transition: 0.2s;
-    padding: 0px 25px;
+    padding: 0 25px;   
 }
 
 nav a:hover, 
@@ -154,7 +150,7 @@ nav a:hover,
 }
 
 .hero-img img{
-    width: 85%;
+    width: 100%;
     position: absolute;
     mix-blend-mode: lighten;
 }
