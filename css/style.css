@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI Historic, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important; 
+
+}
+.main-part{
+    width: 90%;
+    height: 90%;
+    background-color: #4ad0ee1b;
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px 1px #4ace;
+}
