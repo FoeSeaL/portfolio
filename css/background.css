@@ -19,7 +19,7 @@
     background-position: 0 0, 40px 60px, 20px 30px, 10px 15px, 5px 7px; /* left top of big, left top of medium.... */
     animation: twinkle 15s infinite linear;
 }
-body{
+/* body{
     width: 100%;
     height: fit-content;
     height: 100vh;
@@ -27,6 +27,14 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px 0;
+} */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
 @keyframes twinkle {
