@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gunjan Rajak</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        .contact-content {
+            color: white;
+            padding: 40px 5%;
+            flex: 1;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-form {
+            background: rgba(74, 207, 238, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #4acfee;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4acfee;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #4acfee;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-card {
+            background: rgba(74, 207, 238, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #4acfee;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.3s;
+        }
+        
+        .contact-card:hover {
+            box-shadow: 0 0 15px #4acfee;
+        }
+        
+        .contact-card i {
+            font-size: 24px;
+            color: #4acfee;
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy-background"></div>
+    
+    <section class="main-part">
+        <nav>
+            <h1><span style="color: #4ace;">Gunjan</span>Rajak</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact-content">
+            <h2 style="font-size: clamp(32px, 5vw, 48px); margin-bottom: 20px;">Get in Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea required></textarea>
+                        </div>
+                        <button class="btn1">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>gunjan.rajak@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bx-location-plus'></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>New York, United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bx-time-five'></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

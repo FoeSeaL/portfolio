@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gunjan Rajak</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        .about-content {
+            color: white;
+            padding: 40px 5%;
+            flex: 1;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .about-card {
+            background: rgba(74, 207, 238, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #4acfee;
+            transition: 0.3s;
+        }
+        
+        .about-card:hover {
+            box-shadow: 0 0 15px #4acfee;
+        }
+        
+        .about-card h3 {
+            color: #4acfee;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .about-card p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy-background"></div>
+    
+    <section class="main-part">
+        <nav>
+            <h1><span style="color: #4ace;">Gunjan</span>Rajak</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="about-content">
+            <h2 style="font-size: clamp(32px, 5vw, 48px); margin-bottom: 20px;">About Me</h2>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Background</h3>
+                    <p>I'm a passionate full-stack developer with a strong foundation in computer science. My journey in programming began during my college years, and I've been continuously expanding my skills ever since.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Education</h3>
+                    <p>Bachelor's degree in Computer Science with a focus on web development and software engineering. I've also completed numerous certifications in modern web technologies.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Work Philosophy</h3>
+                    <p>I believe in writing clean, maintainable code and creating intuitive user experiences. My approach combines technical expertise with creative problem-solving to deliver optimal solutions.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Interests</h3>
+                    <p>Beyond coding, I'm passionate about staying updated with the latest tech trends, contributing to open-source projects, and mentoring aspiring developers in my community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

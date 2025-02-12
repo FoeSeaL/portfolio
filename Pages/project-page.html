@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Gunjan Rajak</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        .projects-content {
+            color: white;
+            padding: 40px 5%;
+            flex: 1;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            background: rgba(74, 207, 238, 0.1);
+            border-radius: 15px;
+            border: 1px solid #4acfee;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 0 15px #4acfee;
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-info h3 {
+            color: #4acfee;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .project-info p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tag {
+            background: rgba(74, 207, 238, 0.2);
+            color: #4acfee;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid #4acfee;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-links a {
+            color: #4acfee;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: 0.3s;
+        }
+        
+        .project-links a:hover {
+            color: white;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-btn {
+            background: transparent;
+            border: 1px solid #4acfee;
+            color: #4acfee;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #4acfee;
+            color: #0e1217;
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy-background"></div>
+    
+    <section class="main-part">
+        <nav>
+            <h1><span style="color: #4ace;">Gunjan</span>Rajak</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="project.html">Project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="projects-content">
+            <h2 style="font-size: clamp(32px, 5vw, 48px); margin-bottom: 20px;">My Projects</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web Apps</button>
+                <button class="filter-btn">Mobile Apps</button>
+                <button class="filter-btn">UI/UX</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/200" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-stack e-commerce platform built with React and Django, featuring user authentication, product management, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="#"><i class='bx bxl-github'></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/200" alt="Task Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, task assignment, and progress tracking features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="#"><i class='bx bxl-github'></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/200" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather forecasting dashboard that provides real-time weather updates, historical data, and interactive weather maps.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Weather API</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="#"><i class='bx bxl-github'></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/200" alt="Fitness Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker</h3>
+                        <p>A mobile-responsive fitness tracking application with workout planning, progress monitoring, and nutrition logging.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="#"><i class='bx bxl-github'></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
